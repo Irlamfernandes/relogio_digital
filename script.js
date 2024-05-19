@@ -15,4 +15,4 @@ function setTimezone(timezone) {
 }
 
 setInterval(updateClock, 1000);
-updateClock(); // Initial call to display the clock immediately
+updateClock();
