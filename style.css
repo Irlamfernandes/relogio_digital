@@ -61,26 +61,3 @@ button {
 button:hover {
     background-color: #2980b9;
 }
-
-@media (min-width: 600px) {
-    .buttons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .country {
-        width: auto;
-        margin: 10px;
-    }
-
-    button {
-        width: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 800px;
-    }
-}
