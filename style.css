@@ -2,14 +2,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
     background: linear-gradient(135deg, #2c3e50, #3498db);
     color: #ecf0f1;
     font-family: 'Arial', sans-serif;
+    overflow-y: auto;
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -18,12 +23,15 @@ h1 {
 }
 
 .clock {
-    font-size: 3rem;
+    font-size: 2.5rem;
     border: 2px solid #ecf0f1;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 400px;
 }
 
 .buttons {
@@ -31,11 +39,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 .country {
     text-align: center;
     width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 .country h2 {
@@ -47,7 +58,7 @@ button {
     background-color: #3498db;
     color: #ecf0f1;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
@@ -59,4 +70,35 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .country {
+        width: auto;
+        margin: 10px;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .clock {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
 }
