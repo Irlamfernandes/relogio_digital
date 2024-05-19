@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relógio Digital</h1>
+        <div id="clock" class="clock"></div>
+        <div class="buttons">
+            <div class="country">
+                <h2>Brasil</h2>
+                <button onclick="setTimezone('America/Sao_Paulo')">São Paulo (BRT)</button>
+                <button onclick="setTimezone('America/Manaus')">Manaus (AMT)</button>
+            </div>
+            <div class="country">
+                <h2>Estados Unidos</h2>
+                <button onclick="setTimezone('America/New_York')">Nova York (EST)</button>
+                <button onclick="setTimezone('America/Chicago')">Chicago (CST)</button>
+                <button onclick="setTimezone('America/Denver')">Denver (MST)</button>
+                <button onclick="setTimezone('America/Los_Angeles')">Los Angeles (PST)</button>
+            </div>
+            <div class="country">
+                <h2>Reino Unido</h2>
+                <button onclick="setTimezone('Europe/London')">Londres (GMT)</button>
+            </div>
+            <div class="country">
+                <h2>França</h2>
+                <button onclick="setTimezone('Europe/Paris')">Paris (CET)</button>
+            </div>
+            <div class="country">
+                <h2>Japão</h2>
+                <button onclick="setTimezone('Asia/Tokyo')">Tóquio (JST)</button>
+            </div>
+            <div class="country">
+                <h2>Austrália</h2>
+                <button onclick="setTimezone('Australia/Sydney')">Sydney (AEST)</button>
+            </div>
+            <div class="country">
+                <h2>Emirados Árabes Unidos</h2>
+                <button onclick="setTimezone('Asia/Dubai')">Dubai (GST)</button>
+            </div>
+            <div class="country">
+                <h2>África do Sul</h2>
+                <button onclick="setTimezone('Africa/Johannesburg')">Johannesburgo (SAST)</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
