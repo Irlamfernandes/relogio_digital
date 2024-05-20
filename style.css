@@ -6,6 +6,14 @@ body {
     background-color: rgb(76, 76, 231);
 }
 
+h1{
+    font-size: xx-large;
+}
+
+h2{
+    font-size: x-large;
+}
+
 .container {
     text-align: center;
 }
@@ -23,6 +31,7 @@ body {
 button{
     background-color: gray;
     color: whitesmoke;
+    font-size: larger;
 }
 
 button:hover{
