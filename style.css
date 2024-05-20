@@ -3,17 +3,31 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Arial', sans-serif;
+    background-color: rgb(76, 76, 231);
 }
 
 .container {
     text-align: center;
 }
 
+.clock{
+    color: whitesmoke;
+}
 
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+button{
+    background-color: gray;
+    color: whitesmoke;
+}
+
+button:hover{
+    background-color: greenyellow;
+    color: black;
 }
 
 .country {
